@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BioTech Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Explorando a Biologia com a Tecnologia</h1>
+        <p>Conhecimento, ciência e vida!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#biologia">Biologia</a>
+        <a href="#celulas">Células</a>
+        <a href="#genetica">Genética</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="banner">
+            <h2>Explore o mundo da Biologia</h2>
+
+            <p>
+                Descubra os mistérios da vida através
+                da ciência e da tecnologia.
+            </p>
+
+            <a href="#biologia" class="botao-link">
+                Começar exploração
+            </a>
+        </section>
+
+        <section id="biologia">
+            <h2> O que é Biologia?</h2>
+
+            <p>
+                Biologia é a ciência que estuda os seres vivos,
+                suas estruturas, funcionamento, evolução
+                e relações com o ambiente.
+            </p>
+        </section>
+
+        <section id="celulas">
+            <h2> Células</h2>
+
+            <p>
+                A célula é a unidade básica estrutural e
+                funcional dos seres vivos.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Célula Animal</h3>
+                    <p>
+                        Presente nos animais, possui núcleo
+                        definido e diversas organelas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Célula Vegetal</h3>
+                    <p>
+                        Possui parede celular, cloroplastos
+                        e um grande vacúolo central.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="genetica">
+            <h2> Genética</h2>
+
+            <p>
+                A genética estuda como as características
+                são transmitidas entre gerações.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>DNA</h3>
+                    <p>
+                        Molécula que armazena as informações
+                        genéticas dos organismos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Genes</h3>
+                    <p>
+                        Segmentos de DNA que contêm
+                        informações hereditárias.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2> Teste seus conhecimentos</h2>
+
+            <p id="pergunta">
+                Qual é a unidade básica dos seres vivos?
+            </p>
+
+            <div class="alternativas">
+
+                <button onclick="verificarResposta('A')">
+                    A) Órgão
+                </button>
+
+                <button onclick="verificarResposta('B')">
+                    B) Célula
+                </button>
+
+                <button onclick="verificarResposta('C')">
+                    C) Sistema
+                </button>
+
+            </div>
+
+            <p id="resultado"></p>
+
+            <p id="pontuacao">Pontos: 0</p>
+
+            <button id="proxima" onclick="proximaPergunta()">
+                Próxima pergunta
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>BioTech Explorer</h3>
+        <p>Feira de Tecnologia-Biologia © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
